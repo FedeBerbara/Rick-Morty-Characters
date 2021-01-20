@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Shlop;
+    src: url('../../assets/fonts/shlop.ttf');
+}
+
+footer {
+    background: #2e2e2e;
+    font-family: Shlop;
+    font-size: 1.5rem;
+    height: 15vh;
+    padding: 9px;
+    text-align: center;
+}
+
+.textfoot {
+    color: #82bf45;
+    margin-top: 4px;
+}
+
+.copyright {
+    color: #17a3ac;
+}

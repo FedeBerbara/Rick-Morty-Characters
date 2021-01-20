@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Shlop;
+    src: url('../../assets/fonts/shlop.ttf');
+}
+
+header {
+    background-image: url('../../assets/images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Shlop;
+    height: 40vh;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+header::before {
+    content: '';
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: linear-gradient(90deg, #1f2937, #111927);
+    opacity: 0.8;
+}
+
+.title {
+    color: #82bf45;
+    font-size: 6rem;
+    padding: 20px
+}
+
+.text {
+    color: #17a3ac;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .title {
+        font-size: 4rem;
+        padding: 35px;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .title {
+        font-size: 3rem;
+        padding: 40px;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+}
