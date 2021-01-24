@@ -20,14 +20,20 @@ const Character = () => {
     return (
         <section>
             <div className="container-fluid">
-                <div className="characters-container">
+                <div className="row">
                     {
                         characters.map(item => (
-                            <div className="character-box" key={item.id}>
-                                <img src={item.image} alt={item.name}/>
-                                <div className="character">
-                                    <h3 className="name">{item.name}</h3>
-                                    <p className="specie">{item.species}</p>
+                            <div className="col-12 col-lg-5 character-box" key={item.id}>
+                                <div className="row">
+                                    <div className="col-12 col-sm-6 image">
+                                        <img src={item.image} alt={item.name}/>
+                                    </div>
+                                    <div className="col-12 col-sm-6 character">
+                                        <h3 className="name">{item.name}</h3>
+                                        <p className="specie">{item.species}</p>
+                                        <p className="gender">{item.gender}</p>
+                                        <p className="origin">{item.origin.name}</p>
+                                    </div>
                                 </div>
                             </div>
                         ))

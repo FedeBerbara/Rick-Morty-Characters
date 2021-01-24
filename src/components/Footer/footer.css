@@ -20,3 +20,15 @@ footer {
 .copyright {
     color: #17a3ac;
 }
+
+@media only screen and (max-width: 450px) {
+    footer {
+        padding: 4px;
+    }    
+}
+
+@media only screen and (max-width: 320px) {
+    footer {
+        padding: 0px;
+    }    
+}
